@@ -1,7 +1,6 @@
-body, html {
+body, html, * {
     padding: 0;
     margin: 0;
-    /* overflow: hidden; */
 }
 
 .container {
@@ -11,78 +10,67 @@ body, html {
 
 .navbar {
     flex: 1;
-    /* background-color: black; */
+    background-color: #e7e7e7;
 }
 
 .navbar h1 {
-    /* color: white; */
-    margin-left: .5em;
-}
-
-.navbar ul {
-    /* margin: 0; */
-    background-color: white;
-    /* text-align: center; */
+    margin: 1rem;
 }
 
 .navbar ul li {
-    margin: 0 0 2rem 0;
-    /* text-decoration: none; */
+    margin: 0 0 2rem 3rem;
     list-style-type: none;
 }
 
 .navbar ul li a {
     text-decoration: none;
     font-size: 3vmin;
+    color: black;
 }
 
 
 .clash {
     flex: 3;
     display: flex;
-    /* box-sizing: border-box; */
 }
 
 .clash .slider {
     flex: 2;
-    background-color: aqua;
+    overflow: hidden;
 }
 
 .clash .prof {
     flex: 2;
-    background-color: red;
+    background-color: #e7e7e7;
 }
 
 .stat {
-    height: 15vh;
-    background-color: white;
-    /* text-align: center; */
+    overflow: hidden;
+    width: auto;
 }
 
-/* .geser::-webkit-scrollbar {
+.stat p {
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.geser::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .geser {
-    width: 30vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    height: 10vh;
+    overflow-x: auto;
     box-sizing: border-box;
     display: flex;
-    /* justify-content: center; */
-    height: 13vh;
     align-items: center;
-    /* background-color: blue; */
+    position: relative;
 }
 
 .status {
     margin-right: 2rem;
     height: 10vh;
-    /* text-align: center; */
-    /* height: 10vh; */
-    /* margin: 0 auto; */
-    /* background-color: white; */
-    /* border: 2px solid white; */
     box-sizing: border-box;
 }
 
@@ -93,21 +81,87 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-color: red;
-    */border-radius: 100%;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    border-radius: 100%;
 }
 
 .status .txt {
-    /* display:block; */
-    /* background-color: aqua; */
     font-size:  12px;
     text-align: center;
 }
 
 .txt p {
     display: block;
+}
+
+.slipost {
+    overflow-y: auto;
+    display: block;
+    height: 85vh;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.slipost::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    width: 39vw;
+    margin: 0 auto 4rem auto;
+    background-color: #e7e7e7;
+}
+
+.profile {
+    height: 7vh;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+}
+
+.pr {
+    width: 3vw;
+    height: 6vh;
+    background-image: url(SMILE.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.profile p {
+    margin-left: 7px;
+    font-weight: bold;
+}
+
+.foto {
+    height: 40vh;
+    background-image: url(SMILE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.capt {
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.love {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+.like {
+    height: 3vh;
+    font-weight: bold;
+}
+
+.caption {
+    font-size: 1rem;
+    margin: 2px;
 }

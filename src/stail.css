@@ -1,0 +1,113 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.navbar {
+    flex: 1;
+    /* background-color: black; */
+}
+
+.navbar h1 {
+    /* color: white; */
+    margin-left: .5em;
+}
+
+.navbar ul {
+    /* margin: 0; */
+    background-color: white;
+    /* text-align: center; */
+}
+
+.navbar ul li {
+    margin: 0 0 2rem 0;
+    /* text-decoration: none; */
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 3vmin;
+}
+
+
+.clash {
+    flex: 3;
+    display: flex;
+    /* box-sizing: border-box; */
+}
+
+.clash .slider {
+    flex: 2;
+    background-color: aqua;
+}
+
+.clash .prof {
+    flex: 2;
+    background-color: red;
+}
+
+.stat {
+    height: 15vh;
+    background-color: white;
+    /* text-align: center; */
+}
+
+/* .geser::-webkit-scrollbar {
+    display: none;
+} */
+
+.geser {
+    width: 30vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center; */
+    height: 13vh;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.status {
+    margin-right: 2rem;
+    height: 10vh;
+    /* text-align: center; */
+    /* height: 10vh; */
+    /* margin: 0 auto; */
+    /* background-color: white; */
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+}
+
+.status .gambar {
+    width: 3.5vw;
+    height: 7vh;
+    background-image: url(SMILE.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: red;
+    */border-radius: 100%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.status .txt {
+    /* display:block; */
+    /* background-color: aqua; */
+    font-size:  12px;
+    text-align: center;
+}
+
+.txt p {
+    display: block;
+}
